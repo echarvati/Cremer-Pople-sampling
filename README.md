@@ -26,14 +26,7 @@ Scan files naming format:
         ◦ 5-MR: mol_[q2 value]_[theta2 value].gjf
         ◦ 6-MR: mol_[Q value]_[Theta value]_[Phi value].gjf
 
-
-    5. Post processing: clean.sh and analyse.py
-clean.sh cleans up the failed log files when the claculation has failed due to ring breaking. Once the logs are clean,  analyse.py prints out a data file with the CP coordinates and the energy (in Hartee) at each point. The data file is written in the following order 
-        ◦ 4-MR: q2 [Angs], Energy [Hartree]  
-        ◦ 5-MR: q2 [Angs], theta2 [rads], theta2 [degs], E[Hartree]
-        ◦ 6-MR: Q value[Angs],Theta value [rads], Theta value [degs], Phi value [rads], Phi value [degs], E[Hartree]
 Auxiliary scripts:
     • run.sh : submit a batch of G16 calculations inside the same directory 
     • control.sh : monitor calculation status finished, unfinished, failed
-    • clean.sh : remove failed calculations before post-processing
     • run_cluster.sh and job.sh : run on the hpc cluster
